@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Check, Copy, Loader2 } from "lucide-react";
+import { Check, Copy, Loader2, Github } from "lucide-react";
 
 interface CertInfo {
   success: boolean;
@@ -82,7 +82,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white py-12 px-4">
+    <div className="min-h-screen bg-black text-white py-12 px-4 relative">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold bg-clip-text bg-gradient-to-r from-white to-stone-400">
@@ -309,6 +309,17 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* GitHub link in bottom right corner */}
+      <a
+        href="https://github.com/vercel-support/cert-verify"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 p-3 bg-stone-900 hover:bg-stone-800 border border-stone-800 rounded-full transition-colors duration-200"
+        aria-label="View source on GitHub"
+      >
+        <Github className="w-5 h-5 text-stone-400 hover:text-white" />
+      </a>
     </div>
   );
 }
