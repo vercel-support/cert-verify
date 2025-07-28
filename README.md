@@ -2,6 +2,8 @@
 
 A Next.js app for verifying SSL/TLS certificates of any domain. Get detailed certificate info, chain analysis, and security details.
 
+**🌐 Live Demo:** https://cert-verify.vercel-support.app
+
 ## ✨ Features
 
 - **Certificate Verification**: Check SSL/TLS certificates for any domain
@@ -19,10 +21,12 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000)
 
+Or try the live version at https://cert-verify.vercel-support.app
+
 ## 🔌 API Usage
 
 ```bash
-curl "http://localhost:3000/api/check-cert?url=vercel.com" | jq
+curl "https://cert-verify.vercel-support.app/api/check-cert?url=vercel.com" | jq
 ```
 
 **Parameters:**
